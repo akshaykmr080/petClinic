@@ -14,7 +14,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>pet-clinic</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.4</version>
 	<name>pet-clinic</name>
 	<description>A pet clinic spring boot project</description>
 
@@ -35,6 +35,7 @@
 					<goals>
 						install
 					</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<checkModificationExcludes>
 						<checkModificationExclude>pom.xml</checkModificationExclude>
 						<checkModificationExclude>pet-clinic-data/pom.xml</checkModificationExclude>
@@ -49,6 +50,6 @@
 		<developerConnection>
 			scm:git:git@github.com:akshaykmr080/petClinic.git
 		</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>pet-clinic-0.0.4</tag>
   </scm>
 </project>
