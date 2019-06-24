@@ -25,8 +25,8 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         Owner owner = new Owner();
-        owner.setFirstName("Akshay");
-        owner.setLastName("Shreekanth");
+        owner.setFirstName("Vidhatri");
+        owner.setLastName("Akshay");
 
         ownerService.save(owner);
 
@@ -38,7 +38,7 @@ public class DataLoader implements CommandLineRunner {
 
         Vet vet = new Vet();
         vet.setFirstName("Raju");
-        vet.setLastName("Pandey");
+        vet.setLastName("Pandey fake");
 
         Vet vet2 = new Vet();
         vet2.setFirstName("Shreepathi");
