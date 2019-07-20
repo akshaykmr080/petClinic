@@ -6,6 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 
 /**
  * Created by akshaykumar on 6/20/19.
@@ -85,13 +86,13 @@ public class DataLoader implements CommandLineRunner {
         catVisit.setDescription("sneezy kitty");
         visitService.save(catVisit);
 
-        Owner owner2 = new Owner();
-        owner2.setFirstName("Aakash");
-        owner2.setLastName("Kumar");
-
-        owner2.setAddress("195 S Sunnyvale Ave");
-        owner2.setCity("Boston");
-        owner2.setTelephone("12345678");
+        Owner owner2 = Owner.builder()
+                        .firstName("Aakash")
+                        .lastName("Kumar")
+                        .address("195 S Sunnyvale Avenue")
+                        .city("Boston").telephone("12345678")
+                .pets(new HashSet<>())
+                        .build();
 
         Pet Apet = new Pet();
         Apet.setType(cat);
